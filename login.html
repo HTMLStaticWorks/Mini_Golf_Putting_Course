@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to your PuttMasters account. Manage your online tee-time bookings, check your league scorecard achievements, and see leaderboard ranks.">
+  <title>Login | PuttMasters Mini Golf</title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap 5 Grid (Local) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <!-- Theme Toggle JS (Head script prevents light flash) -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+<body>
+
+
+
+  <!-- Form Portal Wrapper -->
+  <section class="section-padding d-flex align-items-center" style="min-height: 80vh;">
+    <div class="container hero-animate">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-8 col-sm-10">
+          <div class="glass-card text-center" style="padding: 3rem 2.5rem;">
+            <a href="index.html" class="nav-brand justify-content-center mb-3" style="display: flex;">
+              <i class="fas fa-golf-ball"></i>
+              <span>PuttMasters</span>
+            </a>
+            <h1 class="h3 mb-2 fw-bold">Welcome Back</h1>
+            <p class="text-muted small mb-4">Log in to manage your scorecards and bookings</p>
+            
+            <form class="needs-validation-ui text-start">
+              <div class="form-group mb-3">
+                <label class="form-label" for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" class="form-control-custom" placeholder="name@email.com" required>
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label" for="loginPass">Password</label>
+                <input type="password" id="loginPass" class="form-control-custom" placeholder="••••••••" required>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-4 small">
+                <label class="d-flex align-items-center gap-2" style="cursor: pointer;">
+                  <input type="checkbox"> Remember Me
+                </label>
+                <a href="#" class="text-gradient fw-bold">Forgot Password?</a>
+              </div>
+              <div class="text-center mb-3">
+                <button type="submit" class="btn-golf btn-golf-primary w-100">Sign In</button>
+              </div>
+            </form>
+
+            <!-- Social Login Divider -->
+            <div class="d-flex align-items-center justify-content-center gap-3 my-4">
+              <hr class="flex-grow-1" style="border-color: var(--color-border) !important; margin: 0; opacity: 0.35;">
+              <span class="text-muted small px-2">or continue with</span>
+              <hr class="flex-grow-1" style="border-color: var(--color-border) !important; margin: 0; opacity: 0.35;">
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+              <button type="button" class="btn-social-login btn-google-login" aria-label="Sign in with Google">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.53-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-8.79z"/>
+                  <path fill="#34A853" d="M12 24c3.24 0 5.97-1.08 7.96-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.08 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.15C3.27 21.35 7.37 24 12 24z"/>
+                  <path fill="#FBBC05" d="M5.27 14.24A7.18 7.18 0 014.9 12c0-.79.13-1.57.37-2.24V6.61H1.29A11.94 11.94 0 000 12c0 1.92.45 3.74 1.29 5.39l3.98-3.15z"/>
+                  <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.22 0 12 0 7.37 0 3.27 2.65 1.29 6.61l3.98 3.15c.95-2.85 3.6-4.96 6.73-4.96z"/>
+                </svg>
+              </button>
+              <button type="button" class="btn-social-login btn-apple-login" aria-label="Sign in with Apple">
+                <i class="fab fa-apple"></i>
+              </button>
+            </div>
+
+            <span class="d-block small text-muted">Don't have an account? <a href="signup.html" class="text-primary fw-bold">Create Account</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

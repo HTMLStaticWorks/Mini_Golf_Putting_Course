@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oops! Page not found. It looks like your putt went out of bounds. Return to the PuttMasters home tee box.">
+  <title>Ball Out of Bounds! 404 Error | PuttMasters</title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap 5 Grid (Local) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <!-- Theme Toggle JS (Head script prevents light flash) -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <nav class="navbar-custom">
+    <div class="container navbar-container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-golf-ball"></i>
+        <span>PuttMasters</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="index.html" class="nav-dropdown-item">Adventure Golf</a></li>
+            <li><a href="home-2.html" class="nav-dropdown-item">Putting Lounge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="group-pricing.html" class="nav-link">Group Pricing</a></li>
+        <li class="nav-item"><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+        <a href="signup.html" class="btn-golf btn-golf-primary" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+        <button class="mobile-nav-toggle" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="mobile-menu">
+            <li style="width: 100%; text-align: center;">
+        <a href="#" class="mobile-dropdown-toggle">
+          Home <i class="fas fa-chevron-down" style="font-size: 0.8rem; transition: transform 0.3s ease; margin-left: 0.25rem;"></i>
+        </a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="index.html" class="nav-link">Adventure Golf</a></li>
+          <li><a href="home-2.html" class="nav-link">Putting Lounge</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html" class="nav-link">Courses</a></li>
+      <li><a href="group-pricing.html" class="nav-link">Group Pricing</a></li>
+      <li><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li style="width: 80%; text-align: center; margin-top: 1rem;">
+        <a href="signup.html" class="btn-golf btn-golf-primary w-100">Sign Up</a>
+      </li>
+          <li class="mobile-nav-utilities" style="display: flex; gap: 1rem; margin-top: 1.5rem; justify-content: center; align-items: center; width: 100%;">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 404 Vibe Screen -->
+  <section class="section-padding text-center d-flex align-items-center" style="background-image: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)), url('assets/images/courses/course-detail-hero.jpg'); background-size: cover; background-position: center; min-height: 70vh;">
+    <div class="container hero-animate">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="glass-card py-5 px-4" style="border-color: rgba(255, 255, 255, 0.15);">
+            <div class="d-inline-flex align-items-center justify-content-center bg-danger text-white rounded-circle mb-4" style="width: 80px; height: 80px;">
+              <i class="fas fa-golf-ball fa-2x"></i>
+            </div>
+            <h1 class="text-white mb-2 fw-bold" style="color: #fff !important;">404 - Out of Bounds!</h1>
+            <p class="text-muted small mb-4">It looks like your putt went way off the green. The page you are looking for has been moved or doesn't exist.</p>
+            <a href="index.html" class="btn-golf btn-golf-primary px-5">Tee Off Again (Home)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <i class="fas fa-golf-ball"></i>
+            <span>PuttMasters</span>
+          </div>
+          <p class="footer-desc">Premium adventure mini golf and luxury putting lounge. Dedicated to providing premium family fun and corporate events entertainment.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Courses & Packages</h3>
+          <ul class="footer-links">
+            <li><a href="courses.html">Our Putting Courses</a></li>
+            <li><a href="party-packages.html">Birthday Celebrations</a></li>
+            <li><a href="group-pricing.html">Group Discounts</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="blog.html">Tips & Blog News</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Visitor Information</h3>
+          <ul class="footer-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Fairway Drive, Amusement Hub, Florida</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 234-5678</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@puttmasters-golf.com</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Join Our Newsletter</h3>
+          <p class="footer-desc" style="font-size: 0.85rem;">Subscribe to get discount vouchers, event announcements, and local leaderboard stats.</p>
+          <form class="newsletter-form needs-validation-ui">
+            <input type="email" placeholder="Email Address" class="newsletter-input" required aria-label="Email Address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PuttMasters. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

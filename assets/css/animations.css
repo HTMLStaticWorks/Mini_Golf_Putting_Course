@@ -1,0 +1,75 @@
+/* ==========================================================================
+   CSS ANIMATIONS & TRANSITIONS
+   ========================================================================= */
+
+/* Zoom-in hover effect for image cards */
+.img-zoom-hover {
+  overflow: hidden;
+}
+
+.img-zoom-hover img {
+  transition: transform var(--transition-slow);
+}
+
+.img-zoom-hover:hover img {
+  transform: scale(1.06);
+}
+
+/* Micro-transitions for standard buttons and elements */
+.transition-all {
+  transition: all var(--transition-normal);
+}
+
+/* Base states for GSAP scroll reveal fade-ups */
+.gsap-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Subtle glow effects for call to actions */
+@keyframes glowing-accent {
+  0% {
+    box-shadow: 0 0 5px rgba(245, 158, 11, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(245, 158, 11, 0.2);
+  }
+}
+
+.glow-btn {
+  animation: glowing-accent 3s infinite;
+}
+
+/* Floating animation for subtle element movement */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Quick fade-in helper */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-el {
+  animation: fadeIn 0.8s ease-out forwards;
+}

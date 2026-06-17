@@ -1,0 +1,62 @@
+/* ==========================================================================
+   DARK THEME OVERRIDES
+   ========================================================================== */
+html[data-theme="dark"] {
+  /* Override core colors */
+  --color-primary: #22C55E;   /* Accent Green */
+  --color-accent: #FBBF24;    /* Accent Gold */
+  --color-secondary: #3B82F6; /* Accent Blue */
+  --color-bg: #020617;
+  --color-surface: #0B1120;
+  --color-text: #E2E8F0;
+  --color-text-secondary: #94A3B8;
+  --color-border: #1E293B;
+
+  /* Glassmorphism Styles (Dark Mode) */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: rgba(0, 0, 0, 0.35);
+
+  /* Shadow overrides */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure inputs remain dark in dark mode */
+html[data-theme="dark"] select,
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea {
+  color-scheme: dark;
+}
+
+/* Glass card styling text readability guarantees */
+html[data-theme="dark"] .glass-card {
+  background: var(--glass-bg);
+  border-color: var(--glass-border);
+}
+
+html[data-theme="dark"] .footer-custom {
+  background-color: #020617;
+  border-top: 1px solid var(--color-border);
+}
+
+html[data-theme="dark"] .social-link {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+html[data-theme="dark"] .btn-theme-toggle:hover {
+  background-color: var(--color-border);
+}
+
+/* General improvements for dark mode details text visibility */
+html[data-theme="dark"] p {
+  color: var(--color-text-secondary);
+}
+
+html[data-theme="dark"] .golf-card {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}

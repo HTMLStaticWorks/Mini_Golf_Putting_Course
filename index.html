@@ -1,1 +1,471 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to PuttMasters - Premium family mini golf courses, adventure putting challenges, birthday party venue, and tourist destination. Book your tee time today!">
+  <title>PuttMasters | Premium Mini Golf & Putting Course</title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap 5 Grid (Local) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <!-- Theme Toggle JS (Head script prevents light flash) -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <nav class="navbar-custom">
+    <div class="container navbar-container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-golf-ball"></i>
+        <span>PuttMasters</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Home <i class="fas fa-chevron-down"
+              style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="index.html" class="nav-dropdown-item">Adventure Golf</a></li>
+            <li><a href="home-2.html" class="nav-dropdown-item">Putting Lounge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="group-pricing.html" class="nav-link">Group Pricing</a></li>
+        <li class="nav-item"><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+        <a href="signup.html" class="btn-golf btn-golf-primary" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+        <button class="mobile-nav-toggle" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="mobile-menu">
+            <li style="width: 100%; text-align: center;">
+        <a href="#" class="mobile-dropdown-toggle">
+          Home <i class="fas fa-chevron-down" style="font-size: 0.8rem; transition: transform 0.3s ease; margin-left: 0.25rem;"></i>
+        </a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="index.html" class="nav-link active">Adventure Golf</a></li>
+          <li><a href="home-2.html" class="nav-link">Putting Lounge</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html" class="nav-link">Courses</a></li>
+      <li><a href="group-pricing.html" class="nav-link">Group Pricing</a></li>
+      <li><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li style="width: 80%; text-align: center; margin-top: 1rem;">
+        <a href="signup.html" class="btn-golf btn-golf-primary w-100">Sign Up</a>
+      </li>
+          <li class="mobile-nav-utilities" style="display: flex; gap: 1rem; margin-top: 1.5rem; justify-content: center; align-items: center; width: 100%;">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <img src="assets/images/hero/hero-1.jpg" alt="PuttMasters Mini Golf Course Hero" class="hero-bg-image">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content hero-center">
+        <span class="hero-animate text-uppercase text-gradient fw-bold mb-2 d-inline-block"
+          style="letter-spacing: 2px; font-size: 0.9rem;">The Ultimate Family Destination</span>
+        <h1 class="hero-title hero-animate">Putt Into a World of Adventure</h1>
+        <p class="hero-description hero-animate">Experience themed mini golf designed to bring families, friends, and
+          putting enthusiasts together. Explore lush tropical landscaping, pirate obstacles, and illuminated evening
+          tees.</p>
+        <div class="hero-buttons hero-animate">
+          <a href="courses.html" class="btn-golf btn-golf-primary glow-btn">Book Tee Time</a>
+          <a href="party-packages.html" class="btn-golf btn-golf-outline text-white border-white">Event Packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome / Venue Highlight -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 gsap-reveal">
+          <span class="text-gradient fw-bold text-uppercase" style="letter-spacing: 1.5px; font-size: 0.85rem;">Discover
+            PuttMasters</span>
+          <h2 class="mt-2 mb-4 fw-800">A World-Class Putting Experience for All Ages</h2>
+          <p>Located in the heart of the tourist district, PuttMasters is a beautifully landscaped, premium recreation
+            venue featuring creative putting holes, tricky water hazards, and night-golf lighting systems.</p>
+          <p>Whether you're looking for a fun family day out, hosting a birthday party, planning a school field trip, or
+            looking for a date night, our courses offer the perfect balance of fun and challenge.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center justify-content-center bg-success text-white rounded-circle"
+                  style="width: 48px; height: 48px; min-width: 48px;">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">3 Unique Courses</h4>
+                  <span class="text-muted" style="font-size: 0.85rem;">Different difficulties</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle"
+                  style="width: 48px; height: 48px; min-width: 48px;">
+                  <i class="fas fa-moon"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Night Play Available</h4>
+                  <span class="text-muted" style="font-size: 0.85rem;">LED illuminated cups</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 gsap-reveal">
+          <div class="img-zoom-hover rounded-3 overflow-hidden shadow-lg">
+            <img src="assets/images/venue/entrance.jpg" alt="PuttMasters Venue Entrance" class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Teaser -->
+  <section class="section-padding"
+    style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-title gsap-reveal">
+        <span>The Main Event</span>
+        <h2>Choose Your Putting Quest</h2>
+      </div>
+      <div class="row g-4 gsap-stagger-grid">
+        <!-- Course 1 -->
+        <div class="col-md-4 gsap-stagger-item">
+          <div class="golf-card">
+            <div class="golf-card-img-wrapper">
+              <img src="assets/images/courses/course-1.jpg" alt="Tropical Oasis Course" class="golf-card-img">
+              <span class="golf-card-tag">Family Favorite</span>
+            </div>
+            <div class="golf-card-body">
+              <h3 class="golf-card-title">Tropical Oasis</h3>
+              <div class="golf-card-meta">
+                <span><i class="fas fa-flag"></i> 18 Holes</span>
+                <span><i class="fas fa-signal"></i> Easy</span>
+              </div>
+              <p class="golf-card-desc">Navigate through waterfalls, floral hazards, and light sand bunkers. Ideal for
+                young putters and relaxed gameplay.</p>
+              <a href="course-details.html" class="golf-card-link">Explore Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 2 -->
+        <div class="col-md-4 gsap-stagger-item">
+          <div class="golf-card">
+            <div class="golf-card-img-wrapper">
+              <img src="assets/images/courses/course-2.jpg" alt="Pirate Cove Challenge" class="golf-card-img">
+              <span class="golf-card-tag">Popular</span>
+            </div>
+            <div class="golf-card-body">
+              <h3 class="golf-card-title">Pirate Cove Challenge</h3>
+              <div class="golf-card-meta">
+                <span><i class="fas fa-flag"></i> 18 Holes</span>
+                <span><i class="fas fa-signal"></i> Medium</span>
+              </div>
+              <p class="golf-card-desc">Explore shipwrecks, water obstacles, and hidden caves. Watch out for the pirate
+                treasure chests blocking the paths!</p>
+              <a href="course-details-2.html" class="golf-card-link">Explore Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 3 -->
+        <div class="col-md-4 gsap-stagger-item">
+          <div class="golf-card">
+            <div class="golf-card-img-wrapper">
+              <img src="assets/images/courses/course-3.jpg" alt="Neon Galaxy Putting" class="golf-card-img">
+              <span class="golf-card-tag">Unique Experience</span>
+            </div>
+            <div class="golf-card-body">
+              <h3 class="golf-card-title">Neon Galaxy</h3>
+              <div class="golf-card-meta">
+                <span><i class="fas fa-flag"></i> 18 Holes</span>
+                <span><i class="fas fa-signal"></i> Hard</span>
+              </div>
+              <p class="golf-card-desc">A futuristic, neon-lit course that comes alive at sunset. UV obstacles and
+                cosmic paths make this our most challenging loop.</p>
+              <a href="course-details-3.html" class="golf-card-link">Explore Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Glassmorphism Promotion -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 order-lg-2 gsap-reveal">
+          <span class="text-gradient fw-bold text-uppercase" style="letter-spacing: 1.5px; font-size: 0.85rem;">Party
+            Venue Extraordinaire</span>
+          <h2 class="mt-2 mb-4 fw-800">Unforgettable Events & Celebrations</h2>
+          <p>PuttMasters handles all the logistics for your group gathers. From gourmet catering options to designated
+            team-building tournament leaders, we turn putting golf into a primary group outing experience.</p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Dedicated Party Cabana Rooms</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Guided Mini Golf Tournaments</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Full Service F&B Packages</li>
+          </ul>
+          <div class="d-flex gap-3">
+            <a href="party-packages.html" class="btn-golf btn-golf-primary">Birthday Packages</a>
+            <a href="group-pricing.html" class="btn-golf btn-golf-outline">Group Rates</a>
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-1 gsap-reveal">
+          <div class="glass-card">
+            <h3 class="mb-3 text-gradient">Featured Event Package</h3>
+            <p class="text-muted">Perfect for corporate celebrations, family reunions, and class graduation parties.</p>
+            <div class="row g-4 mt-2">
+              <div class="col-sm-6">
+                <h4 class="h5 text-primary mb-2">Team Outing VIP</h4>
+                <p class="small text-muted mb-0">Includes 18 holes of play on any course, custom scorecards, personal
+                  host, and premium party snacks.</p>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="h5 text-accent mb-2">Mega Golf Buffet</h4>
+                <p class="small text-muted mb-0">Full course access + fresh pizzas, nachos, unlimited fountain sodas,
+                  and champion trophy ceremony.</p>
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-top" style="border-color: var(--color-border) !important;">
+              <span class="d-block text-muted small">Reserve in advance to guarantee slots</span>
+              <span class="h4 text-primary fw-bold">$24.99 <span class="small text-muted">/ player</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visitor Amenities / Sunset Vibe Slider -->
+  <section class="section-padding"
+    style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 gsap-reveal">
+          <div class="img-zoom-hover rounded-3 overflow-hidden shadow-lg">
+            <img src="assets/images/venue/amenities.jpg" alt="PuttMasters Outdoor Seating Amenities" class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-6 gsap-reveal">
+          <span class="text-gradient fw-bold text-uppercase" style="letter-spacing: 1.5px; font-size: 0.85rem;">Visitor
+            Information</span>
+          <h2 class="mt-2 mb-4 fw-800">More Than Just a Golf Course</h2>
+          <p>After putting your path to victory, relax in our premium outdoor spaces. The 19th Hole Snack bar offers
+            delicious refreshments, burgers, craft root beers, and healthy options for kids.</p>
+          <div class="accordion-custom">
+            <div class="border-bottom py-3" style="border-color: var(--color-border) !important;">
+              <h4 class="h6 mb-2 text-primary"><i class="fas fa-clock me-2"></i> Opening Hours</h4>
+              <p class="small text-muted mb-0">Monday - Thursday: 10:00 AM - 10:00 PM<br>Friday - Sunday: 9:00 AM -
+                11:59 PM</p>
+            </div>
+            <div class="border-bottom py-3" style="border-color: var(--color-border) !important;">
+              <h4 class="h6 mb-2 text-primary"><i class="fas fa-map-marker-alt me-2"></i> Getting Here</h4>
+              <p class="small text-muted mb-0">Located at 123 fairway Drive, Amusement hub (Free parking validated on
+                entry).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title gsap-reveal">
+        <span>Visitor Feedback</span>
+        <h2>What Our Guests Are Saying</h2>
+      </div>
+      <div class="row g-4 gsap-stagger-grid">
+        <div class="col-md-4 gsap-stagger-item">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"PuttMasters is the absolute highlight of our kids' school breaks! The pirate
+              course obstacles are challenging but completely accessible. Incredible design!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/gallery/gallery-1.jpg" alt="Client Sarah Jenkins" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Sarah Jenkins</h4>
+                <span>Family Visitor</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gsap-stagger-item">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"We organized a corporate putting challenge on the Neon Course. Everyone had an
+              outstanding time, and the staff coordinated the tournament smoothly!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/gallery/gallery-3.jpg" alt="Client David Chen" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>David Chen</h4>
+                <span>HR Director</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gsap-stagger-item">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Best birthday party my daughter ever had. The food packages, clean tables, and
+              designated putting lanes kept all kids active and engaged. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/gallery/gallery-2.jpg" alt="Client Jessica Vance" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Jessica Vance</h4>
+                <span>Mom of Two</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="section-padding text-center bg-success text-white"
+    style="background-image: linear-gradient(135deg, var(--color-primary), #065f46);">
+    <div class="container gsap-reveal">
+      <h2 class="text-white mb-3 fw-bold">Ready to Put Your Skills to the Test?</h2>
+      <p class="text-white opacity-75 mb-4 max-width-600 mx-auto">Book your tee slots online to secure your preferred
+        timing and skip the ticketing queue at our welcome gate.</p>
+      <a href="courses.html" class="btn-golf btn-golf-accent glow-btn">Reserve Your Tee-Time Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <i class="fas fa-golf-ball"></i>
+            <span>PuttMasters</span>
+          </div>
+          <p class="footer-desc">Premium adventure mini golf and luxury putting lounge. Dedicated to providing premium
+            family fun and corporate events entertainment.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Courses & Packages</h3>
+          <ul class="footer-links">
+            <li><a href="courses.html">Our Putting Courses</a></li>
+            <li><a href="party-packages.html">Birthday Celebrations</a></li>
+            <li><a href="group-pricing.html">Group Discounts</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="blog.html">Tips & Blog News</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Visitor Information</h3>
+          <ul class="footer-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Fairway Drive, Amusement Hub, Florida</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 234-5678</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@puttmasters-golf.com</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Join Our Newsletter</h3>
+          <p class="footer-desc" style="font-size: 0.85rem;">Subscribe to get discount vouchers, event announcements,
+            and local leaderboard stats.</p>
+          <form class="newsletter-form needs-validation-ui">
+            <input type="email" placeholder="Email Address" class="newsletter-input" required
+              aria-label="Email Address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i
+                class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PuttMasters. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

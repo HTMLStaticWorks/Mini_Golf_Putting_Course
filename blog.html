@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PuttMasters Blog - Read expert putting guides, mini golf tips and tricks, corporate event planning blueprints, and general venue news.">
+  <title>Blog & News | PuttMasters Mini Golf Experience</title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap 5 Grid (Local) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <!-- Theme Toggle JS (Head script prevents light flash) -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <nav class="navbar-custom">
+    <div class="container navbar-container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-golf-ball"></i>
+        <span>PuttMasters</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="index.html" class="nav-dropdown-item">Adventure Golf</a></li>
+            <li><a href="home-2.html" class="nav-dropdown-item">Putting Lounge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="group-pricing.html" class="nav-link">Group Pricing</a></li>
+        <li class="nav-item"><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+        <a href="signup.html" class="btn-golf btn-golf-primary" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+        <button class="mobile-nav-toggle" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="mobile-menu">
+            <li style="width: 100%; text-align: center;">
+        <a href="#" class="mobile-dropdown-toggle">
+          Home <i class="fas fa-chevron-down" style="font-size: 0.8rem; transition: transform 0.3s ease; margin-left: 0.25rem;"></i>
+        </a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="index.html" class="nav-link">Adventure Golf</a></li>
+          <li><a href="home-2.html" class="nav-link">Putting Lounge</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html" class="nav-link">Courses</a></li>
+      <li><a href="group-pricing.html" class="nav-link">Group Pricing</a></li>
+      <li><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li style="width: 80%; text-align: center; margin-top: 1rem;">
+        <a href="signup.html" class="btn-golf btn-golf-primary w-100">Sign Up</a>
+      </li>
+          <li class="mobile-nav-utilities" style="display: flex; gap: 1rem; margin-top: 1.5rem; justify-content: center; align-items: center; width: 100%;">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Inner Page Banner -->
+  <section class="section-padding text-center bg-dark text-white" style="background-image: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.75)), url('assets/images/blog/blog-1.jpg'); background-size: cover; background-position: center; padding: 5rem 0;">
+    <div class="container hero-animate">
+      <h1 class="text-white mb-2 fw-bold">Tips, Tricks & Venue News</h1>
+      <p class="text-white opacity-75 max-width-600 mx-auto mb-0">Learn how to read slopes, align your club head, and plan perfect weekend birthday outings.</p>
+    </div>
+  </section>
+
+  <!-- Blog Archive -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Main Blog Area -->
+        <div class="col-lg-8 gsap-reveal">
+          <div class="row g-4">
+            <!-- Post 1 -->
+            <div class="col-md-12">
+              <div class="golf-card" style="flex-direction: row; align-items: center; max-height: 320px; overflow: hidden;">
+                <div class="d-none d-md-block" style="width: 40%; height: 100%; min-height: 320px; position: relative;">
+                  <img src="assets/images/blog/blog-1.jpg" alt="Putter close up on green" style="width: 100%; height: 100%; object-fit: cover; position: absolute;">
+                </div>
+                <div class="golf-card-body" style="padding: 2rem; width: 60%;">
+                  <span class="text-gradient fw-bold text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">Pro Tips</span>
+                  <h2 class="h4 mt-1 mb-2"><a href="blog-details.html" class="text-gradient-hover">Mastering the Putter Face Angle</a></h2>
+                  <div class="golf-card-meta mb-2" style="font-size: 0.8rem;">
+                    <span><i class="far fa-calendar-alt"></i> June 15, 2026</span>
+                    <span><i class="far fa-user"></i> By Coach Sterling</span>
+                  </div>
+                  <p class="small text-muted mb-3">Even a 1-degree deviation in your putter face angle can push your ball out of the hole cup on a 6-foot putt. Learn how to steady your hands...</p>
+                  <a href="blog-details.html" class="golf-card-link">Read Full Post <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="col-md-6">
+              <div class="golf-card">
+                <div class="golf-card-img-wrapper">
+                  <img src="assets/images/blog/blog-2.jpg" alt="Party decorations setup" class="golf-card-img">
+                  <span class="golf-card-tag">Party Guide</span>
+                </div>
+                <div class="golf-card-body">
+                  <h3 class="golf-card-title h4"><a href="blog-details-2.html" class="text-gradient-hover">Ultimate Kid's Party Planning</a></h3>
+                  <div class="golf-card-meta">
+                    <span><i class="far fa-calendar-alt"></i> June 10, 2026</span>
+                    <span><i class="far fa-user"></i> By Party Crew</span>
+                  </div>
+                  <p class="golf-card-desc small">Hosting kids can be chaotic. We outline our timeline tips, cupcake calculations, and scoring game integrations for birthdays...</p>
+                  <a href="blog-details-2.html" class="golf-card-link">Read Post <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="col-md-6">
+              <div class="golf-card">
+                <div class="golf-card-img-wrapper">
+                  <img src="assets/images/blog/blog-3.jpg" alt="Glow in the dark golf greens" class="golf-card-img">
+                  <span class="golf-card-tag">Leagues</span>
+                </div>
+                <div class="golf-card-body">
+                  <h3 class="golf-card-title h4"><a href="blog-details-3.html" class="text-gradient-hover">The Rise of Neon Evening Golf</a></h3>
+                  <div class="golf-card-meta">
+                    <span><i class="far fa-calendar-alt"></i> June 08, 2026</span>
+                    <span><i class="far fa-user"></i> By LED Design</span>
+                  </div>
+                  <p class="golf-card-desc small">Discover how UV reactive pathways and soundscapes have transformed putting courses into the ultimate local evening date spot...</p>
+                  <a href="blog-details-3.html" class="golf-card-link">Read Post <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="col-md-6">
+              <div class="golf-card">
+                <div class="golf-card-img-wrapper">
+                  <img src="assets/images/blog/blog-4.jpg" alt="Comparing blade and mallet putters" class="golf-card-img">
+                  <span class="golf-card-tag">Pro Tips</span>
+                </div>
+                <div class="golf-card-body">
+                  <h3 class="golf-card-title h4"><a href="blog-details-4.html" class="text-gradient-hover">Choosing Your Putter: Blade vs. Mallet</a></h3>
+                  <div class="golf-card-meta">
+                    <span><i class="far fa-calendar-alt"></i> June 05, 2026</span>
+                    <span><i class="far fa-user"></i> By Coach Sterling</span>
+                  </div>
+                  <p class="golf-card-desc small">Should you go for a classic blade or a high-MOI mallet putter? We break down which style aligns better with your natural stroke arc...</p>
+                  <a href="blog-details-4.html" class="golf-card-link">Read Post <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="col-md-6">
+              <div class="golf-card">
+                <div class="golf-card-img-wrapper">
+                  <img src="assets/images/blog/blog-5.jpg" alt="Proper putting stance and foot alignment" class="golf-card-img">
+                  <span class="golf-card-tag">Putting Tips</span>
+                </div>
+                <div class="golf-card-body">
+                  <h3 class="golf-card-title h4"><a href="blog-details-5.html" class="text-gradient-hover">Stance & Alignment Fundamentals</a></h3>
+                  <div class="golf-card-meta">
+                    <span><i class="far fa-calendar-alt"></i> June 02, 2026</span>
+                    <span><i class="far fa-user"></i> By Pro Staff</span>
+                  </div>
+                  <p class="golf-card-desc small">A consistent stance is the secret to a repeatable stroke. Learn how to align your eyes directly over the ball for optimal line tracking...</p>
+                  <a href="blog-details-5.html" class="golf-card-link">Read Post <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Panel -->
+        <div class="col-lg-4 gsap-reveal">
+          <div class="glass-card" style="padding: 2rem;">
+            <!-- Categories -->
+            <div class="border-bottom pb-4 mb-4" style="border-color: var(--color-border) !important;">
+              <h4 class="h5 mb-3"><i class="fas fa-folder-open text-primary me-2"></i> Categories</h4>
+              <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+                <li class="mb-2 d-flex justify-content-between">
+                  <a href="#" class="text-muted hover-link">Putting Tips</a>
+                  <span class="badge bg-secondary rounded-pill">12</span>
+                </li>
+                <li class="mb-2 d-flex justify-content-between">
+                  <a href="#" class="text-muted hover-link">Event Coordination</a>
+                  <span class="badge bg-secondary rounded-pill">8</span>
+                </li>
+                <li class="mb-2 d-flex justify-content-between">
+                  <a href="#" class="text-muted hover-link">Venue Announcements</a>
+                  <span class="badge bg-secondary rounded-pill">5</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <a href="#" class="text-muted hover-link">Tournament Leagues</a>
+                  <span class="badge bg-secondary rounded-pill">9</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Recent Posts -->
+            <div>
+              <h4 class="h5 mb-3"><i class="fas fa-history text-primary me-2"></i> Recent Posts</h4>
+              <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
+                <li class="mb-3">
+                  <a href="blog-details.html" class="fw-bold d-block text-gradient-hover">Mastering the Putter Face Angle</a>
+                  <span class="text-muted small">June 15, 2026</span>
+                </li>
+                <li class="mb-3">
+                  <a href="blog-details-3.html" class="fw-bold d-block text-gradient-hover">The Rise of Neon Evening Golf</a>
+                  <span class="text-muted small">June 08, 2026</span>
+                </li>
+                <li>
+                  <a href="blog-details-4.html" class="fw-bold d-block text-gradient-hover">Choosing Your Putter: Blade vs. Mallet</a>
+                  <span class="text-muted small">June 05, 2026</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <i class="fas fa-golf-ball"></i>
+            <span>PuttMasters</span>
+          </div>
+          <p class="footer-desc">Premium adventure mini golf and luxury putting lounge. Dedicated to providing premium family fun and corporate events entertainment.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Courses & Packages</h3>
+          <ul class="footer-links">
+            <li><a href="courses.html">Our Putting Courses</a></li>
+            <li><a href="party-packages.html">Birthday Celebrations</a></li>
+            <li><a href="group-pricing.html">Group Discounts</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="blog.html">Tips & Blog News</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Visitor Information</h3>
+          <ul class="footer-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Fairway Drive, Amusement Hub, Florida</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 234-5678</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@puttmasters-golf.com</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Join Our Newsletter</h3>
+          <p class="footer-desc" style="font-size: 0.85rem;">Subscribe to get discount vouchers, event announcements, and local leaderboard stats.</p>
+          <form class="newsletter-form needs-validation-ui">
+            <input type="email" placeholder="Email Address" class="newsletter-input" required aria-label="Email Address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PuttMasters. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

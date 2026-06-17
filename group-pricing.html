@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="View group rates and event pricing packages for PuttMasters. Ideal for corporate outings, school trips, family reunions, and large gatherings. Discount packages available!">
+  <title>Group Pricing | PuttMasters Mini Golf Venue</title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap 5 Grid (Local) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <!-- Theme Toggle JS (Head script prevents light flash) -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <nav class="navbar-custom">
+    <div class="container navbar-container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-golf-ball"></i>
+        <span>PuttMasters</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"
+              style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="index.html" class="nav-dropdown-item">Adventure Golf</a></li>
+            <li><a href="home-2.html" class="nav-dropdown-item">Putting Lounge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="group-pricing.html" class="nav-link active">Group Pricing</a></li>
+        <li class="nav-item"><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+        <a href="signup.html" class="btn-golf btn-golf-primary" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+        <button class="mobile-nav-toggle" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="mobile-menu">
+            <li style="width: 100%; text-align: center;">
+        <a href="#" class="mobile-dropdown-toggle">
+          Home <i class="fas fa-chevron-down" style="font-size: 0.8rem; transition: transform 0.3s ease; margin-left: 0.25rem;"></i>
+        </a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="index.html" class="nav-link">Adventure Golf</a></li>
+          <li><a href="home-2.html" class="nav-link">Putting Lounge</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html" class="nav-link">Courses</a></li>
+      <li><a href="group-pricing.html" class="nav-link active">Group Pricing</a></li>
+      <li><a href="party-packages.html" class="nav-link">Party Packages</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li style="width: 80%; text-align: center; margin-top: 1rem;">
+        <a href="signup.html" class="btn-golf btn-golf-primary w-100">Sign Up</a>
+      </li>
+          <li class="mobile-nav-utilities" style="display: flex; gap: 1rem; margin-top: 1.5rem; justify-content: center; align-items: center; width: 100%;">
+        <button class="btn-theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn-theme-toggle btn-rtl-toggle" aria-label="Toggle RTL direction">RTL</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Inner Page Banner -->
+  <section class="section-padding text-center bg-dark text-white"
+    style="background-image: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.75)), url('assets/images/events/event-corporate.jpg'); background-size: cover; background-position: center; padding: 6rem 0;">
+    <div class="container hero-animate">
+      <h1 class="text-white mb-2 fw-bold">Group Rates & Outings</h1>
+      <p class="text-white opacity-75 max-width-600 mx-auto mb-0">Bring your team together. Save up to 30% on mini golf
+        tickets for groups of 10 players or more.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Comparison Tables -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title gsap-reveal">
+        <span>Pricing Grid</span>
+        <h2>Choose Your Group Package</h2>
+      </div>
+      <div class="row g-4 gsap-stagger-grid">
+        <!-- Tier 1 -->
+        <div class="col-lg-3 col-md-6 gsap-stagger-item">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Family Reunion</h3>
+              <p class="text-muted">For 10 to 19 players</p>
+            </div>
+            <div class="pricing-price">$11<span>/ player</span></div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 18 Holes of Play</li>
+              <li><i class="fas fa-check"></i> Equipment Rentals</li>
+              <li><i class="fas fa-check"></i> Dedicated scoring sheet</li>
+              <li><i class="fas fa-times text-danger"></i> Reserved tables</li>
+              <li><i class="fas fa-times text-danger"></i> Food & Soda buffet</li>
+            </ul>
+            <a href="contact.html" class="btn-golf btn-golf-primary w-100">Book Outing</a>
+          </div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="col-lg-3 col-md-6 gsap-stagger-item">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>School & Camp</h3>
+              <p class="text-muted">For schools & scouts</p>
+            </div>
+            <div class="pricing-price">$9<span>/ player</span></div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 18 Holes of Play</li>
+              <li><i class="fas fa-check"></i> Equipment Rentals</li>
+              <li><i class="fas fa-check"></i> 1 juice box per student</li>
+              <li><i class="fas fa-check"></i> Free entry for 1 teacher</li>
+              <li><i class="fas fa-times text-danger"></i> Dedicated host</li>
+            </ul>
+            <a href="contact.html" class="btn-golf btn-golf-primary w-100">Reserve Schools</a>
+          </div>
+        </div>
+
+        <!-- Tier 3 (Popular/Recommended) -->
+        <div class="col-lg-3 col-md-6 gsap-stagger-item">
+          <div class="pricing-card popular">
+            <span class="pricing-badge">Recommended</span>
+            <div class="pricing-header">
+              <h3>Team Building</h3>
+              <p class="text-muted">For corporate events</p>
+            </div>
+            <div class="pricing-price">$22<span>/ player</span></div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 18 Holes of Play</li>
+              <li><i class="fas fa-check"></i> Shared pizzas & sodas</li>
+              <li><i class="fas fa-check"></i> Tournament leaderboards</li>
+              <li><i class="fas fa-check"></i> Reserved lounge table</li>
+              <li><i class="fas fa-check"></i> Event Coordinator host</li>
+            </ul>
+            <a href="contact.html" class="btn-golf btn-golf-accent w-100">Plan Team Outing</a>
+          </div>
+        </div>
+
+        <!-- Tier 4 -->
+        <div class="col-lg-3 col-md-6 gsap-stagger-item">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Exclusive Buyout</h3>
+              <p class="text-muted">Full venue reservation</p>
+            </div>
+            <div class="pricing-price">$699<span>/ hour</span></div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Private access </li>
+              <li><i class="fas fa-check"></i> Unlimited players allowed</li>
+              <li><i class="fas fa-check"></i> Live venue DJ music</li>
+              <li><i class="fas fa-check"></i> Custom catering options</li>
+              <li><i class="fas fa-check"></i> Complete custom branding</li>
+            </ul>
+            <a href="contact.html" class="btn-golf btn-golf-primary w-100">Inquire Buyout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Large Outing Showcase with Glassmorphic Highlight Card -->
+  <section class="section-padding"
+    style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 gsap-reveal">
+          <span class="text-gradient fw-bold text-uppercase" style="letter-spacing: 1.5px; font-size: 0.85rem;">Why
+            PuttMasters?</span>
+          <h2 class="mt-2 mb-4 fw-800">The Ultimate Tourist Attraction & Corporate Venue</h2>
+          <p>We combine sports, dining, and social interaction in a modern, landscaped environment. Our event staff
+            handles everything: custom score tracking, bracket coordination, catering service, and winner awards.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-6">
+              <h4 class="h6 mb-2 text-primary"><i class="fas fa-bus-alt me-2"></i> Easy Transit</h4>
+              <p class="small text-muted mb-0">Free coach bus parking bays for schools and tour groups.</p>
+            </div>
+            <div class="col-6">
+              <h4 class="h6 mb-2 text-primary"><i class="fas fa-utensils me-2"></i> Custom Catering</h4>
+              <p class="small text-muted mb-0">Dietary options, gluten-free crusts, vegan menus, and full bar packages.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 gsap-reveal">
+          <div class="glass-card">
+            <h3 class="h4 mb-3 text-gradient">Booking Conditions</h3>
+            <ul class="list-unstyled mb-0" style="font-size: 0.95rem; color: var(--color-text-secondary);">
+              <li class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> Minimum 10 players required for
+                group rate discounts.</li>
+              <li class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> Bookings must be reserved at least 5
+                days in advance.</li>
+              <li class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> 20% deposit required at reservation
+                checkout to secure dates.</li>
+              <li><i class="fas fa-info-circle text-primary me-2"></i> Free cancellations up to 72 hours before the
+                tee-off timing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Group Inquiry Form -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 gsap-reveal">
+          <div class="section-title">
+            <span>Get in touch</span>
+            <h2>Book Your Group Outing</h2>
+          </div>
+          <form class="needs-validation-ui">
+            <div class="row g-3">
+              <div class="col-md-6 form-group">
+                <label class="form-label" for="groupName">Organizer Name</label>
+                <input type="text" id="groupName" class="form-control-custom" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <label class="form-label" for="groupEmail">Email Address</label>
+                <input type="email" id="groupEmail" class="form-control-custom" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <label class="form-label" for="groupSize">Estimated Group Size</label>
+                <select id="groupSize" class="form-control-custom" required>
+                  <option value="">Select size...</option>
+                  <option value="10-19">10 - 19 players</option>
+                  <option value="20-49">20 - 49 players</option>
+                  <option value="50-99">50 - 99 players</option>
+                  <option value="100+">100+ players / Full Buyout</option>
+                </select>
+              </div>
+              <div class="col-md-6 form-group">
+                <label class="form-label" for="groupDate">Target Outing Date</label>
+                <input type="date" id="groupDate" class="form-control-custom" required>
+              </div>
+              <div class="col-12 form-group">
+                <label class="form-label" for="groupNotes">Special Requests / Requirements</label>
+                <textarea id="groupNotes" class="form-control-custom"
+                  placeholder="Let us know if you need pizza buffets, custom trophy configurations, or classroom setups..."></textarea>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <button type="submit" class="btn-golf btn-golf-primary px-5">Submit Outing Request</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <i class="fas fa-golf-ball"></i>
+            <span>PuttMasters</span>
+          </div>
+          <p class="footer-desc">Premium adventure mini golf and luxury putting lounge. Dedicated to providing premium
+            family fun and corporate events entertainment.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Courses & Packages</h3>
+          <ul class="footer-links">
+            <li><a href="courses.html">Our Putting Courses</a></li>
+            <li><a href="party-packages.html">Birthday Celebrations</a></li>
+            <li><a href="group-pricing.html">Group Discounts</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="blog.html">Tips & Blog News</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Visitor Information</h3>
+          <ul class="footer-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Fairway Drive, Amusement Hub, Florida</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 234-5678</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@puttmasters-golf.com</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Join Our Newsletter</h3>
+          <p class="footer-desc" style="font-size: 0.85rem;">Subscribe to get discount vouchers, event announcements,
+            and local leaderboard stats.</p>
+          <form class="newsletter-form needs-validation-ui">
+            <input type="email" placeholder="Email Address" class="newsletter-input" required
+              aria-label="Email Address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i
+                class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PuttMasters. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
