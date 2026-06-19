@@ -60,3 +60,10 @@ html[data-theme="dark"] .golf-card {
   background-color: var(--color-surface);
   border-color: var(--color-border);
 }
+
+html[data-theme="dark"] .hero-section .text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}

@@ -547,6 +547,12 @@ html[data-theme="dark"] .mobile-dropdown-menu {
   overflow: hidden;
 }
 
+.hero-section .text-gradient {
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+}
+
 .hero-bg-image {
   position: absolute;
   top: 0;
@@ -1530,5 +1536,13 @@ html[dir="rtl"] .portal-utilities {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-custom .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
   }
 }
