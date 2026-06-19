@@ -125,4 +125,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 6. Password Show/Hide Toggle Handler
+  const passwordToggleBtns = document.querySelectorAll('.password-toggle-btn');
+  passwordToggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const input = btn.previousElementSibling;
+      if (input) {
+        const isPassword = input.getAttribute('type') === 'password';
+        input.setAttribute('type', isPassword ? 'text' : 'password');
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.className = isPassword ? 'far fa-eye-slash' : 'far fa-eye';
+        }
+        btn.setAttribute('aria-label', isPassword ? 'Hide Password' : 'Toggle Password Visibility');
+      }
+    });
+  });
 });
