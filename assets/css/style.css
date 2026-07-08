@@ -1144,8 +1144,51 @@ textarea.form-control-custom {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.bg-primary {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-success {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-text-secondary) !important;
+}
+
+.bg-danger {
+  background-color: #ef4444 !important;
+}
+
 .bg-dark {
   background-color: #0b1120 !important;
+}
+
+/* Rounding Utilities */
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: var(--radius-full) !important;
+}
+
+.rounded-3 {
+  border-radius: var(--radius-md) !important;
+}
+
+/* Badge Utility */
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--radius-sm);
 }
 
 /* ==========================================================================
